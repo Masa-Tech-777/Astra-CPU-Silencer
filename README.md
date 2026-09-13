@@ -84,6 +84,13 @@ Try the **Free Trial Version (60-Minute Test Edition)** first to experience how 
 
 > ⚠️ **Compatibility Notice:** While major CPU series are supported, full compatibility cannot be guaranteed on 100% of PC models due to proprietary motherboard/BIOS restrictions.  
 > If you encounter issues, run `Astra_Diagnostic_Tool.exe` included in the package to generate and email an environment report to the developer with one click.
+>
+> ==================================================
+[Disclaimer & Limitation of Liability]
+- This software utilizes native Windows APIs for CPU power management. However, due to the nature of adjusting CPU operating frequencies, extreme underclocking or setting ultra-low frequencies may cause temporary system unresponsiveness or OS freezes depending on your hardware configuration.
+- The software is provided "AS IS", without warranty of any kind, express or implied. In no event shall the developer (Masa Tech!! / Itachi) be liable for any direct, indirect, incidental, special, or consequential damages (including, but not limited to, hardware failure, loss of data, or business interruption) arising out of the use or inability to use this software.
+- Users are strongly advised to test system stability using the "Free Trial Version" prior to purchasing a full product license. Please use this utility at your own risk.
+==================================================
 
 ---
 
@@ -175,6 +182,7 @@ Try the **Free Trial Version (60-Minute Test Edition)** first to experience how 
 ・本ソフトウェアはWindows標準APIのみを使用する安全設計ですが、CPUの動作周波数を変更する特性上、お使いのPC環境や設定値によってはOSの動作低下や一時的なフリーズが発生する可能性がございます。
 ・本ソフトウェアの使用、または使用不能によって生じた直接的・間接的な損害（ハードウェアの故障、データの消失、事業の中断、機会損失等）について、開発者（Masa Tech!! / イタチ）は一切の責任を負いかねます。
 ・必ずお使いの環境にて「無料お試し版（Trial）」で動作確認を行った上で、ご自身の責任においてご利用・ご購入ください。
+ ⚠️ **互換性に関するご案内:** PCメーカー固有のマザーボードやBIOS仕様により、稀に制御ができない場合があります。動作がうまくいかない場合は、同梱の `Astra_Diagnostic_Tool.exe` を実行して診断ログを送信してください。誠心誠意対応させていただきます。
 ==================================================
 
 ---
