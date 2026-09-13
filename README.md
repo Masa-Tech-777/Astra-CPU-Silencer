@@ -15,7 +15,7 @@
 
 ### 🎁 [Release Celebration Offer]
 To celebrate the launch of **Astra CPU Silencer**, we are offering a special price of **¥1,000 JPY** (33% OFF from regular price ¥1,500 JPY) through **September 30, 2026**!  
-👉 [Purchase Full Version License on BOOTH](h[ttps://booth.pm/](https://masatech.booth.pm/)) *(Please replace with your BOOTH URL)*
+👉 [Purchase Full Version License on BOOTH]((https://masatech.booth.pm/)) *(Please replace with your BOOTH URL)*
 
 ---
 
