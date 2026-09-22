@@ -31,8 +31,8 @@ Do you have any of these problems with your laptop?
 
 ### 🛡️ 3 Key Safety Features
 
-1. **Native Windows ACPI APIs Only**  
-   Unlike typical overclocking or undervolting tools, Astra CPU Silencer **never modifies CPU voltage directly**. It uses only native Windows ACPI power management features, reducing Blue Screen of Death (BSoD) and hardware crash risks to absolute zero.
+1. 1. **Native Windows ACPI APIs Only**
+   Unlike typical overclocking or undervolting tools, Astra CPU Silencer **does not directly modify CPU voltage**. It relies on Windows-native ACPI power management features, allowing Windows to remain responsible for CPU power and frequency management and helping to reduce the risk of system instability and hardware-related issues.
 2. **Intel Core & AMD Ryzen Dual Auto-Support**  
    Automatically detects whether your CPU is Intel or AMD Ryzen, applying the optimal hybrid frequency capping for your specific processor.
 3. **One-Click Restore Tool Included**  
@@ -70,7 +70,7 @@ Try the **Free Trial Version (60-Minute Test Edition)** first to experience how 
 ### 📂 Package Contents
 - `Astra CPU Silencer v2.8.0.exe` (Main Application)
 - `Astra_Restore_Tool.exe` (System Restorer & Uninstaller)
-- `Astra_Restore_Tool.exe` (One-Click System Diagnostic & Support Tool)
+- `Astra_Diagnostic_Tool.exe` (One-Click System Diagnostic & Support Tool)
 - `Readme_EN.txt` / `Readme_JP.txt`
 
 ---
