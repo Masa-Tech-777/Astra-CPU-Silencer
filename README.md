@@ -124,7 +124,7 @@ Try the **Free Trial Version (60-Minute Test Edition)** first to experience how 
 
 ### 🛡️ 本ツールの「3つの絶対的な安心」
 
-1. **【安全性100%】Windows標準のACPI電源管理APIのみを使用**  
+1. **【安全性】Windows標準のACPI電源管理APIのみを使用**  
    一般的なCPU調整ツール（アンダーボルト等）のような危険な電圧変更は一切行いません。OS標準の安全な制御機能のみを使用するため、ブルースクリーン（BSoD）等のフリーズリスクを物理的にゼロにしています。
 2. **Intel Core i ＆ AMD Ryzen の両方に完全自動対応！**  
    お使いのCPUがIntelかAMD Ryzenかを自動判別し、それぞれのプロセッサに最も安全で効果的なハイブリッド制御を自動適用します。
