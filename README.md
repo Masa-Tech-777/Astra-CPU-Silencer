@@ -1,7 +1,7 @@
 # Astra CPU Silencer
 
 > **Intelligent Safe CPU Cooling & Noise Reduction Utility for Laptops (Windows 10 / 11)**  
-> **Dual Intel & AMD Ryzen ACPI Power Control without Voltage Tampering.*
+> **Dual Intel & AMD Ryzen CPU Power Management with Windows ACPI*
 
 ---
 
@@ -31,7 +31,7 @@ Do you have any of these problems with your laptop?
 
 ### 🛡️ 3 Key Safety Features
 
-1. 1. **Native Windows ACPI APIs Only**
+1. **Native Windows ACPI APIs Only**
    Unlike typical overclocking or undervolting tools, Astra CPU Silencer **does not directly modify CPU voltage**. It relies on Windows-native ACPI power management features, allowing Windows to remain responsible for CPU power and frequency management and helping to reduce the risk of system instability and hardware-related issues.
 2. **Intel Core & AMD Ryzen Dual Auto-Support**  
    Automatically detects whether your CPU is Intel or AMD Ryzen, applying the optimal hybrid frequency capping for your specific processor.
