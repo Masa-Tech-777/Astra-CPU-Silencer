@@ -34,17 +34,20 @@ Microsoft Defenderでご検知された場合で、対処可能でしたら｢�
 
 ## 🌐 English Description
 
-We sincerely apologize for an issue affecting Astra CPU Silencer and Astra CPU Silencer Extreme Edition.
+We sincerely apologize for a license-related issue affecting Astra CPU Silencer and Astra CPU Silencer Extreme Edition.
 
-Due to a problem related to the license system, some users were unable to properly proceed with license registration after the trial period had expired.
+Due to this issue, some users were unable to properly proceed with license application or registration after the trial period had expired.
 
-We sincerely apologize to everyone who considered using the applications, as well as those who tried them and encountered this issue.
+We are very sorry for the inconvenience caused to those who considered using the applications, as well as those who actually tried them.
 
-The problem has now been fixed.
+The issue has now been fixed.
+Please note that Astra CPU Silencer is currently under review by Microsoft regarding a suspected false-positive detection by Microsoft Defender.
+
+As a small gesture of apology, from 12:00 AM JST on Saturday until 11:59 PM JST on Sunday, both applications will be available at an additional 40% off the current sale price.
+
+We hope this limited-time offer can serve as a small expression of our apology.
 
 We will continue to improve testing and reliability so that the applications can be used with greater confidence.
-
-We sincerely apologize for the inconvenience.
 
 MasaTech itachi
 
