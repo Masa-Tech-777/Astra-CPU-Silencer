@@ -4,11 +4,11 @@
 ご利用をご検討いただいた皆様、また実際にお試しいただいた皆様には、ご不便とご迷惑をおかけしてしまい、誠に申し訳ございません。
 
 現在、この不具合は修正済みです。
-また、なお、Astra CPU Silencerについては、Microsoft Defenderによる誤検知について現在Microsoftへ確認・再解析を申請しております。
+また、Microsoft Defenderによる誤検知について、Astra CPU Silencerは昨日(2026年9月25日20時)に申請しましたが、Astra CPU Silencer Extreme Editionは、本日(2026年9月26日6:30)申請しました。Extremeは申請して間もないため、誤検出が起きる場合がございますので、暫くお時間を開けてから、ご使用下さい。
 
-セール開始時には4時間以上空いておりますので、ご検知されましたらWindowsアップデートをしていただき、Microsoft Defenderの定義ファイルを更新して下さい。
+また、Astra CPU SilencerとAstra CPU Silencer Extreme Editionで、誤検知されましたらWindowsアップデートをしていただき、Microsoft Defenderの定義ファイルを更新して下さい。
 
-それでも誤検知されましたら、土曜日の午前中までお待ちいただき、Microsoft Defenderの定義ファイルの更新をお願いいたします。
+それでも誤検知されましたら、土曜日の午後中までお待ちいただき、Microsoft Defenderの定義ファイルの更新をお願いいたします。
 
 今回のお詫びとして、日本時間の土曜日 0:00 から日曜日 23:59 までの期間限定で、現在のセール価格からさらに40％OFFにて販売いたします。
 
@@ -40,7 +40,10 @@ Due to this issue, some users were unable to properly proceed with license appli
 We are very sorry for the inconvenience caused to those who considered using the applications, as well as those who actually tried them.
 
 The issue has now been fixed.
-Please note that Astra CPU Silencer is currently under review by Microsoft regarding a suspected false-positive detection by Microsoft Defender.
+
+Please note that Astra CPU Silencer has already been submitted to Microsoft for review regarding a suspected false-positive detection by Microsoft Defender, and the review request was submitted approximately 10 hours ago.
+
+Astra CPU Silencer Extreme Edition has also been submitted to Microsoft for review regarding a separate suspected false-positive detection. However, this submission was made only very recently, so we kindly ask for a little more time for Microsoft to complete its review and update the relevant detection information.
 
 As a small gesture of apology, from 12:00 AM JST on Saturday until 11:59 PM JST on Sunday, both applications will be available at an additional 40% off the current sale price.
 
