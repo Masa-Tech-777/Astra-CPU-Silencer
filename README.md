@@ -4,11 +4,14 @@
 ご利用をご検討いただいた皆様、また実際にお試しいただいた皆様には、ご不便とご迷惑をおかけしてしまい、誠に申し訳ございません。
 
 現在、この不具合は修正済みです。
-また、Microsoft Defenderによる誤検知について、Astra CPU Silencerは昨日(2026年9月25日20時)に申請しましたが、Astra CPU Silencer Extreme Editionは、本日(2026年9月26日6:30)申請しました。Extremeは申請して間もないため、誤検出が起きる場合がございますので、暫くお時間を開けてから、ご使用下さい。
 
-また、Astra CPU SilencerとAstra CPU Silencer Extreme Editionで、誤検知されましたらWindowsアップデートをしていただき、Microsoft Defenderの定義ファイルを更新して下さい。
+また、Microsoft Defenderによる誤検知について、Astra CPU Silencerは2026年9月25日20時頃に、Astra CPU Silencer Extreme Editionは2026年9月26日6時30分頃に、それぞれMicrosoftへ確認・再解析を申請しております。
 
-それでも誤検知されましたら、土曜日の午後中までお待ちいただき、Microsoft Defenderの定義ファイルの更新をお願いいたします。
+特にAstra CPU Silencer Extreme Editionについては、申請からまだ時間が経っていないため、Microsoft Defenderで引き続き誤検知される可能性があります。その場合は、少し時間を置いてから再度お試しいただけますと幸いです。
+
+また、Astra CPU SilencerおよびAstra CPU Silencer Extreme EditionがMicrosoft Defenderで検知された場合は、Windows Updateを実行し、Microsoft Defenderのセキュリティ定義を最新の状態に更新してください。
+
+それでも検知される場合は、Microsoft側での解析や定義ファイルへの反映に時間がかかっている可能性があります。しばらく時間を置いたうえで、再度Microsoft Defenderの定義ファイルを更新していただけますようお願いいたします。
 
 今回のお詫びとして、日本時間の土曜日 0:00 から日曜日 23:59 までの期間限定で、現在のセール価格からさらに40％OFFにて販売いたします。
 
