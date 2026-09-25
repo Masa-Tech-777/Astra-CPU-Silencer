@@ -1,3 +1,16 @@
+【お詫び】
+このたび、Astra CPU Silencer および Astra CPU Silencer Extreme Edition において、ライセンス認証周辺の不具合により、一部の環境で試用期間終了後に正常なライセンス申請・登録が行えない問題が発生しておりました。
+
+ご利用を検討してくださった皆様、ならびに実際にお試しいただいた皆様には、ご不便とご迷惑をおかけしましたことを心よりお詫び申し上げます。
+
+現在、この不具合は修正済みです。
+
+今後も、できる限り安心してお使いいただけるよう、動作確認と改善を継続してまいります。
+
+このたびは誠に申し訳ございませんでした。
+
+まさTech!! イタチ
+
 # Astra CPU Silencer
 
 > **Intelligent Safe CPU Cooling & Noise Reduction Utility for Laptops (Windows 10 / 11)**  
@@ -12,6 +25,20 @@
 ---
 
 ## 🌐 English Description
+
+We sincerely apologize for an issue affecting Astra CPU Silencer and Astra CPU Silencer Extreme Edition.
+
+Due to a problem related to the license system, some users were unable to properly proceed with license registration after the trial period had expired.
+
+We sincerely apologize to everyone who considered using the applications, as well as those who tried them and encountered this issue.
+
+The problem has now been fixed.
+
+We will continue to improve testing and reliability so that the applications can be used with greater confidence.
+
+We sincerely apologize for the inconvenience.
+
+MasaTech itachi
 
 ### 🎁 [Release Celebration Offer]
 To celebrate the launch of **Astra CPU Silencer**, we are offering a special price of **¥1,000 JPY** (33% OFF from regular price ¥1,500 JPY) through **September 30, 2026**!  
