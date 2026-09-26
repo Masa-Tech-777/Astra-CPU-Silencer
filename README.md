@@ -37,10 +37,6 @@ We are very sorry for the inconvenience caused to those who considered using the
 
 The issue has now been fixed.
 
-Please note that Astra CPU Silencer has already been submitted to Microsoft for review regarding a suspected false-positive detection by Microsoft Defender, and the review request was submitted approximately 10 hours ago.
-
-Astra CPU Silencer Extreme Edition has also been submitted to Microsoft for review regarding a separate suspected false-positive detection. However, this submission was made only very recently, so we kindly ask for a little more time for Microsoft to complete its review and update the relevant detection information.
-
 As a small gesture of apology, from 12:00 AM JST on Saturday until 11:59 PM JST on Sunday, both applications will be available at an additional 40% off the current sale price.
 
 We hope this limited-time offer can serve as a small expression of our apology.
