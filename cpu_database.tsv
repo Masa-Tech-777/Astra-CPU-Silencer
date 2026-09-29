@@ -1,0 +1,5 @@
+# Astra CPU Silencer CPU Database
+# format_version=1
+# Columns: vendor<TAB>model<TAB>max_mhz<TAB>source<TAB>verified_date<TAB>enabled
+vendor	model	max_mhz	source	verified_date	enabled
+Intel	I7-10510U	4900	https://www.intel.com/content/www/us/en/products/sku/196449/intel-core-i710510u-processor-8m-cache-up-to-4-90-ghz/specifications.html	2026-09-29	1
