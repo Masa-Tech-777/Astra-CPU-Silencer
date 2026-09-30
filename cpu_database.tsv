@@ -3,3 +3,12 @@
 # Columns: vendor<TAB>model<TAB>base_mhz<TAB>max_mhz<TAB>source<TAB>verified_date<TAB>enabled
 vendor	model	base_mhz	max_mhz	source	verified_date	enabled
 Intel	I7-10510U	1800	4900	https://www.intel.com/content/www/us/en/products/sku/196449/intel-core-i710510u-processor-8m-cache-up-to-4-90-ghz/specifications.html	2026-09-29	1
+Intel	I5-12400	2500	4400	https://www.intel.com/content/www/us/en/products/sku/134586/intel-core-i512400-processor-18m-cache-up-to-4-40-ghz/specifications.html	2026-09-30	1
+Intel	I5-13400	2500	4600	https://www.intel.com/content/www/us/en/products/sku/230495/intel-core-i513400-processor-20m-cache-up-to-4-60-ghz/specifications.html	2026-09-30	1
+Intel	I5-14400	2500	4700	https://www.intel.com/content/www/us/en/products/sku/236788/intel-core-i5-processor-14400-20m-cache-up-to-4-70-ghz/specifications.html	2026-09-30	1
+Intel	I7-12700K	3600	5000	https://www.intel.com/content/www/us/en/products/sku/134594/intel-core-i712700k-processor-25m-cache-up-to-5-00-ghz/specifications.html	2026-09-30	1
+Intel	I7-13700K	3400	5400	https://www.intel.com/content/www/us/en/products/sku/230500/intel-core-i713700k-processor-30m-cache-up-to-5-40-ghz/specifications.html	2026-09-30	1
+Intel	I7-14700K	3400	5600	https://www.intel.com/content/www/us/en/products/sku/236783/intel-core-i7-processor-14700k-33m-cache-up-to-5-60-ghz/specifications.html	2026-09-30	1
+Intel	I9-14900K	3200	6000	https://www.intel.com/content/www/us/en/products/sku/236773/intel-core-i9-processor-14900k-36m-cache-up-to-6-00-ghz/specifications.html	2026-09-30	1
+Intel	ULTRA 5 125H	1200	4500	https://www.intel.com/content/www/us/en/products/sku/236848/intel-core-ultra-5-processor-125h-18m-cache-up-to-4-50-ghz/specifications.html	2026-09-30	1
+Intel	ULTRA 7 155H	1400	4800	https://www.intel.com/content/www/us/en/products/sku/236847/intel-core-ultra-7-processor-155h-24m-cache-up-to-4-80-ghz/specifications.html	2026-09-30	1
