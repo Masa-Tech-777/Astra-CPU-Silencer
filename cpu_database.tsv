@@ -246,3 +246,13 @@ AMD	7500F	3700	5000	https://www.amd.com/en/products/processors/desktops/ryzen/70
 AMD	8700G	4200	5100	https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-7-8700g.html	2026-10-02	1
 AMD	8600G	4300	5000	https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8600g.html	2026-10-02	1
 AMD	8500G	3500	5000	https://www.amd.com/en/products/processors/desktops/ryzen/8000-series/amd-ryzen-5-8500g.html	2026-10-02	1
+AMD	9950X	4300	5700	https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html	2026-10-02	1
+AMD	9950X3D	4300	5700	https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html	2026-10-02	1
+AMD	9950X3D2	4300	5600	https://www.amd.com/ja/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d2-dual-edition.html	2026-10-02	1
+AMD	9900X	4400	5600	https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x.html	2026-10-02	1
+AMD	9900X3D	4400	5500	https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9900x3d.html	2026-10-02	1
+AMD	9850X3D	4700	5600	https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9850x3d.html	2026-10-02	1
+AMD	9800X3D	4700	5200	https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html	2026-10-02	1
+AMD	9700X	3800	5500	https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9700x.html	2026-10-02	1
+AMD	9600X	3900	5400	https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600x.html	2026-10-02	1
+AMD	9600	3800	5200	https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-5-9600.html	2026-10-02	1
