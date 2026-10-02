@@ -1,213 +1,177 @@
-【お詫びとお詫びセールのご案内】
-このたび、Astra CPU Silencer および Astra CPU Silencer Extreme Edition において、ライセンス関連の不具合により、一部の環境で試用期間終了後に正常なライセンス申請・登録が行えない問題が発生しておりました。
+Astra CPU Silencer v2.9.0
+README / 配布用説明書
+============================================================
 
-ご利用をご検討いただいた皆様、また実際にお試しいただいた皆様には、ご不便とご迷惑をおかけしてしまい、誠に申し訳ございません。
+■ はじめに
 
-現在、この不具合は修正済みです。
+Astra CPU Silencer は、Windows 標準の CPU 電源管理機能を利用して、
+CPU の最大周波数、最小性能状態、ブースト動作を調整するためのユーティリティです。
 
-Astra CPU Silencer / Astra CPU Silencer Extreme Edition ともに、Microsoftへの再解析・確認が完了しました。現在公開中の最新版は、Microsoft Defenderで問題のあるファイルとして検出されておらず、そのままご利用いただけます。
-今回のお詫びとして、日本時間の土曜日 0:00 から日曜日 23:59 までの期間限定で、現在のセール価格からさらに40％OFFにて販売いたします。
-
-少しでもお詫びの気持ちをお伝えできれば幸いです。
-今後も、より安心してご利用いただけるよう、動作確認と改善を続けてまいります。
-
-まさTech!! イタチ🙇
+独自のカーネルドライバや CPU 電圧の直接制御は使用しません。
+設定変更には Windows 標準の電源管理機能（powercfg 等）を使用します。
 
 
-# Astra CPU Silencer
+■ 対応環境
 
-> **Intelligent Safe CPU Cooling & Noise Reduction Utility for Laptops (Windows 10 / 11)**  
-> **Dual Intel & AMD Ryzen CPU Power Management with Windows ACPI*
+・Windows 11 64bit
+・Intel CPU / AMD Ryzen CPU
+・管理者権限が必要です
 
----
+※ Windows 10 でも動作する可能性がありますが、正式サポート対象は Windows 11 です。
+※ PC・CPU・BIOS・メーカー独自電源管理機能などの違いにより、動作結果は異なる場合があります。
 
-## 🌐 Language / 言語を選択
-- [English Description](#-english-description)
-- [日本語の説明](#-日本語の説明)
 
----
+■ 基本的な使い方
 
-## 🌐 English Description
+1. Astra CPU Silencer を起動します。
+2. 必要に応じて Windows 電源プランを選択します。
+3. AC（電源接続時）/ DC（バッテリー駆動時）の設定を入力します。
+4. ［設定を適用］を押します。
 
-We sincerely apologize for a license-related issue affecting Astra CPU Silencer and Astra CPU Silencer Extreme Edition.
+主な設定項目：
 
-Due to this issue, some users were unable to properly proceed with license application or registration after the trial period had expired.
+・最大周波数
+・最小周波数
+・ブーストモード
+・Windows 起動時の自動実行
 
-We are very sorry for the inconvenience caused to those who considered using the applications, as well as those who actually tried them.
+0 MHz は「最大周波数の制限なし」です。
+CPU をオーバークロックする設定ではありません。
 
-The issue has now been fixed.
 
-As a small gesture of apology, from 12:00 AM JST on Saturday until 11:59 PM JST on Sunday, both applications will be available at an additional 40% off the current sale price.
+■ Standard 版の安全仕様
 
-We hope this limited-time offer can serve as a small expression of our apology.
+Standard 版の最小周波数入力は 1400 MHz を安全下限としています。
 
-We will continue to improve testing and reliability so that the applications can be used with greater confidence.
+最小周波数の MHz 入力は、Windows の「最小のプロセッサの状態（%）」へ換算して適用されます。
+そのため、入力した MHz が実際の CPU クロックとして常時固定されるわけではありません。
 
-MasaTech itachi
+最大周波数は、CPU 型番が CPU 仕様データベースと完全一致した場合のみ、
+登録済みのメーカー仕様最大値を入力上限として使用します。
 
-### 🎁 [Release Celebration Offer]
-To celebrate the launch of **Astra CPU Silencer**, we are offering a special price of **¥1,000 JPY** (33% OFF from regular price ¥1,500 JPY) through **September 30, 2026**!  
-👉 [Purchase Full Version License on BOOTH]((https://masatech.booth.pm/)) *([Please replace with your BOOTH URL](https://masatech.booth.pm/))*
+CPU がデータベースで確認できない場合、最大値を推測しません。
+その場合は 0 MHz（制限なし）をご利用ください。
 
----
+データベース確認済み上限を超える値を入力した場合は、
+入力欄だけを確認済み最大値へ修正し、その時点では Windows へ書き込みません。
+表示された値を確認して、もう一度［設定を適用］してください。
 
-### 💡 What is Astra CPU Silencer?
-Do you have any of these problems with your laptop?
-- 🔊 The cooling fan gets extremely loud and noisy even during light tasks...
-- ♨️ The keyboard and bottom get uncomfortably hot, making you worry about PC lifespan...
-- ☕ You want to work quietly in cafes, libraries, or late at night without disturbing anyone...
 
-**Astra CPU Silencer** is a safe, intelligent power management utility created for laptop users who want to eliminate overheating and fan noise without any hardware risks.
+■ 2500 MHz について
 
----
+本プロジェクトの実機検証で安全上避けるべき値と判断したため、
+2500 MHz が入力された場合は 2400 MHz へ自動的に変更します。
 
-### 🛡️ 3 Key Safety Features
 
-1. **Native Windows ACPI APIs Only**
-   Unlike typical overclocking or undervolting tools, Astra CPU Silencer **does not directly modify CPU voltage**. It relies on Windows-native ACPI power management features, allowing Windows to remain responsible for CPU power and frequency management and helping to reduce the risk of system instability and hardware-related issues.
-2. **Intel Core & AMD Ryzen Dual Auto-Support**  
-   Automatically detects whether your CPU is Intel or AMD Ryzen, applying the optimal hybrid frequency capping for your specific processor.
-3. **One-Click Restore Tool Included**  
-   Includes `Astra CPU Silencer v2.8.0.exe` to safely restore all Windows default power settings at any time with a single click.
+■ ブーストモード
 
----
+Windows の Processor Performance Boost Mode に対応した 0～6 の値を使用します。
+標準値は 1（Enabled）です。
 
-### ⚡ Main Features
-- **3 Quick Presets:**
-  - 🟢 **Low Power Eco:** Maximum silence for library and night use.
-  - 🟡 **Medium Silent:** Balanced quietness and daily responsiveness.
-  - 🔴 **Normal Mode:** Full performance / limits removed.
-- **Custom Frequency Control:** Adjust clock limits in 100MHz steps (Independent settings for AC Plugged-in / DC Battery).
-- **Auto-Start with Windows:** Runs quietly in system tray.
-- **Bilingual Interface:** Toggle between English & Japanese UI instantly.
-- **Cute Official Mascot Icons:** SILENT-chan (Ponytail) & RESTORE-chan (Dress).
+Windows や CPU により、各モードの実際の挙動は異なる場合があります。
 
----
 
-### 🎁 Free Trial Version
-Try the **Free Trial Version (60-Minute Test Edition)** first to experience how quiet your laptop can run!  
-- Runs full quietness features identically to the product version for 60 minutes.
-- After 60 minutes, all settings are automatically restored to Windows defaults, and the app closes cleanly.
+■ 「変更前へ復元」と「完全初期化」
 
----
+メニューまたはタスクトレイから
+［変更前へ復元 / 完全初期化］を選択できます。
 
-### 🔑 How to Purchase & Activate Full Version
-1. Purchase the **Full Version License** on BOOTH. (You will receive an 8-digit Order Number).
-2. Open **Menu -> Register License Key** in the app and click **[ Email Request ]**.
-3. Your default mail client will launch with a pre-filled template. Enter your **BOOTH 8-digit Order Number** and **Name**, then send.
-4. We will reply with your permanent License Key. Paste it into the app to unlock the permanent Full Version!
+【変更前へ復元】
+Astra CPU Silencer が変更する前に保存した CPU 電源設定と
+Processor メニューの表示状態へ戻します。
 
----
+【完全初期化】
+CPU 設定を Astra の基準初期値へ戻し、
+Processor メニューを Clean Baseline へ整理して、
+アプリ設定も初期化します。
 
-### 📂 Package Contents
-- `Astra CPU Silencer v2.8.0.exe` (Main Application)
-- `Astra_Restore_Tool.exe` (System Restorer & Uninstaller)
-- `Astra_Diagnostic_Tool.exe` (One-Click System Diagnostic & Support Tool)
-- `Readme_EN.txt` / `Readme_JP.txt`
+通常、元の環境へ戻したい場合は「変更前へ復元」を使用してください。
 
----
 
-### 💻 System Requirements & Compatibility
-- **OS:** Windows 10 / Windows 11 (64-bit)
-- **CPU:**
-  - Intel Core i3 / i5 / i7 / i9 Series (8th Gen or newer recommended)
-  - AMD Ryzen 3 / 5 / 7 / 9 Series (Zen 2 or newer recommended)
-- **Privileges:** Administrator Rights (UAC prompt on launch)
+■ 60分無料体験
 
-> ⚠️ **Compatibility Notice:** While major CPU series are supported, full compatibility cannot be guaranteed on 100% of PC models due to proprietary motherboard/BIOS restrictions.  
-> If you encounter issues, run `Astra_Diagnostic_Tool.exe` included in the package to generate and email an environment report to the developer with one click.
->
-> ==================================================
-[Disclaimer & Limitation of Liability]
-- This software utilizes native Windows APIs for CPU power management. However, due to the nature of adjusting CPU operating frequencies, extreme underclocking or setting ultra-low frequencies may cause temporary system unresponsiveness or OS freezes depending on your hardware configuration.
-- The software is provided "AS IS", without warranty of any kind, express or implied. In no event shall the developer (Masa Tech!! / Itachi) be liable for any direct, indirect, incidental, special, or consequential damages (including, but not limited to, hardware failure, loss of data, or business interruption) arising out of the use or inability to use this software.
-- Users are strongly advised to test system stability using the "Free Trial Version" prior to purchasing a full product license. Please use this utility at your own risk.
-==================================================
+ライセンス未登録時は 60 分間の無料体験が可能です。
 
----
+体験時間は累積で管理されます。
+手動でテストを終了した場合、残り時間は次回起動時へ引き継がれます。
 
-### 💌 Contact & Support
-- **Official Support Email:** `masatech.dev.apps@gmail.com`
-- **Developer:** Itachi (Kyokan / まさTech!!) & Astra (Mahiru's Legacy)
+体験時間が終了した場合は、
+保存済みの変更前設定への復元を試みた後、
+製品版ライセンス登録画面を表示します。
 
----
 
-<br>
+■ ライセンス登録
 
----
+メニューの
+［ライセンスキーの登録］
+から登録できます。
 
-## 🌸 日本語の説明
+画面に表示されるマシン ID を開発者へお知らせください。
 
-### 🎁 【リリース記念キャンペーン開催中！】
-『Astra CPU Silencer』のリリース記念として、通常価格 1,500円 のところ **33% OFF の 1,000円** で特別販売中！（**2026年9月30日まで**）  
-👉 [BOOTHで製品版ライセンスを購入する](https://masatech.booth.pm/)) *(※ご自身のBOOTHショップURLに置き換えてください)*
+サポート / ライセンス申請：
+masatech.dev.apps@gmail.com
 
----
+BOOTH：
+https://masatech.booth.pm/
 
-### 💡 Astra CPU Silencer とは？
-普段お使いのノートPCで、こんなお悩みはありませんか？
-- 🔊 ちょっと動画を見たり作業するだけで、ファンが「フォオオオ！」と爆音で回り出してうるさい……
-- ♨️ キーボードや底面がお風呂のように熱くなって、PCの寿命が心配……
-- ☕ カフェや静かなオフィス、寝室でファンの音を気にせず作業したい……
 
-本アプリ**『Astra CPU Silencer（アストラ CPU サイレンサー）』**は、そんなノートPCの熱暴走と騒音に悩むすべてのユーザーのために開発された、安全第一の静音化・極冷ユーティリティです。
+■ CPU 仕様データベース
 
----
+CPU の基本周波数・最大周波数は、GitHub 上の CPU 仕様データベースを利用します。
 
-### 🛡️ 本ツールの「3つの絶対的な安心」
+CPU 型番の完全一致のみを採用し、
+不明な CPU の最大周波数を推測して使用することはありません。
 
-1. **【安全性】Windows標準のACPI電源管理APIのみを使用**  
-   一般的なCPU調整ツール（アンダーボルト等）のような危険な電圧変更は一切行いません。OS標準の安全な制御機能のみを使用するため、ブルースクリーン（BSoD）等のフリーズリスクを低減します。
-2. **Intel Core i ＆ AMD Ryzen の両方に完全自動対応！**  
-   お使いのCPUがIntelかAMD Ryzenかを自動判別し、それぞれのプロセッサに最も安全で効果的なハイブリッド制御を自動適用します。
-3. **【完全復元ツールを同梱】いつでもワンクリックで初期状態へ**  
-   万が一「元の設定に戻したい」と思った時は、同梱の `Astra_Restore_Tool.exe` を実行するだけで、すべての設定をWindows標準の初期状態へ完全に復元できます。
+一度取得した有効なデータベースはローカルへキャッシュされます。
 
----
 
-### ⚡ 主な機能・特徴
-- **ワンクリックで選べる3つの快適プリセット:**
-  - 🟢 **低速超省エネ:** 静寂最優先。図書館や深夜の作業に最適。
-  - 🟡 **中速サイレント:** 普段使いの快適さと静音性を完璧に両立。
-  - 🔴 **通常モード:** リミッター解除・フルパワー動作。
-- **自由な周波数カスタマイズ:** 100MHz単位での周波数制限（AC電源／バッテリー駆動時を個別設定可能）。
-- **Windows起動時の自動常駐:** タスクトレイで静かに動作。
-- **完全バイリンガル対応:** 日本語 ⇔ 英語をメニューからワンクリック切り替え。
-- **公式マスコットアイコン:** 静音のポニテちゃん ＆ 復元のドレスちゃん。
+■ 診断ログ
 
----
+サポートや不具合調査のため、診断ログを保存します。
 
-### 🎁 無料お試し版（Trial）のご案内
-まずは**【無料お試し版（60分タイマー版）】**をダウンロードして、ファンの音が静まる快適さをご体験ください！
-- 起動後60分間、製品版とまったく同じすべての静音化機能をお試しいただけます。
-- 60分経過後は、自動的にすべての設定を安全にWindows標準へ復元し、アプリが終了します。
+保存先：
+%AppData%\Astra_CPU_Silencer\Astra_Diagnostic_Log.txt
 
----
+配布フォルダや EXE と同じ場所へ診断ログを作成する仕様ではありません。
 
-### 🔑 製品版ライセンスのご購入・登録手順（簡単3ステップ）
-1. BOOTHにて「製品版ライセンス」をご購入ください（8桁の注文番号が発行されます）。
-2. アプリのメニュー **[ライセンスキーの登録]** を開き、**[メール申請]** ボタンを押します。
-3. 自動起動したメール本文に **「BOOTH注文番号（8桁）」** と **「お名前」** を記入して送信してください。
-4. 折り返し届いた専用ライセンスキーをアプリに入力すれば、無制限の製品版としてご利用いただけます！
+ログには CPU、Windows 電源プラン、設定処理など、
+不具合調査に必要な情報が記録されます。
 
----
 
-### 📂 同梱ファイル一覧
-- `Astra CPU Silencer v2.8.0.exe`（アプリ本体）
-- `Astra_Restore_Tool.exe`（システム完全復元・アンインストーラー）
-- `Astra_Diagnostic_Tool.exe`（ワンクリック動作環境診断・サポートツール）
-- `Readme_JP.txt` / `Readme_EN.txt`
+■ アップデート
 
----
+アプリ内の
+［ヘルプ］→［最新版の確認］
+から GitHub Releases の最新版を確認できます。
 
-### 💻 動作環境・互換性について
-- **対応OS:** Windows 10 / Windows 11（64-bit）
-- **対応CPU:**
-  - Intel Core i3 / i5 / i7 / i9 シリーズ（第8世代以降推奨）
-  - AMD Ryzen 3 / 5 / 7 / 9 シリーズ（Zen 2以降推奨）
-- **権限:** 管理者権限（起動時にUACダイアログが出ます）
+GitHub：
+https://github.com/Masa-Tech-777/Astra-CPU-Silencer
 
-> ⚠️ **互換性に関するご案内:** PCメーカー固有のマザーボードやBIOS仕様により、稀に制御ができない場合があります。動作がうまくいかない場合は、同梱の `Astra_Diagnostic_Tool.exe` を実行して診断ログを送信してください。誠心誠意対応させていただきます。
+
+■ アンインストールについて
+
+専用アンインストーラーはありません。
+
+削除する前に、必要に応じて
+［変更前へ復元］または［完全初期化］を実行してください。
+
+その後 Astra CPU Silencer を終了し、
+実行ファイルを削除してください。
+
+スタートアップ登録を使用している場合は、
+復元 / 完全初期化処理によって解除されます。
+
+
+■ ご注意
+
+本ソフトは CPU の電圧や BIOS 設定を直接操作するものではありませんが、
+Windows の CPU 電源設定を変更します。
+
+PC の状態を確認しながら無理のない設定で使用してください。
+
+CPU クロックの実際の動作は、
+CPU、Windows、電源プラン、負荷、温度、BIOS、メーカー独自制御などの影響を受けます。
+入力した MHz と実クロックが常に一致することを保証するものではありません。
 
 ==================================================
 【免責事項・ご注意点】
@@ -217,8 +181,8 @@ Try the **Free Trial Version (60-Minute Test Edition)** first to experience how 
  ⚠️ **互換性に関するご案内:** PCメーカー固有のマザーボードやBIOS仕様により、稀に制御ができない場合があります。動作がうまくいかない場合は、同梱の `Astra_Diagnostic_Tool.exe` を実行して診断ログを送信してください。誠心誠意対応させていただきます。
 ==================================================
 
----
 
-### 💌 お問い合わせ・サポート窓口
-- **公式サポートメール:** `masatech.dev.apps@gmail.com`
-- **開発:** イタチ (教官 / まさTech!!) & Astra (Mahiru's Legacy)
+============================================================
+Astra CPU Silencer v2.9.0
+Support: masatech.dev.apps@gmail.com
+============================================================
